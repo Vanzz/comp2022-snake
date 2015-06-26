@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
 public class Snake extends JPanel
 {
     private String snake = "head.png";
-
+    private Snake proximo;
     private int dx;
     private int dy;
     private int x;
@@ -41,6 +41,14 @@ public class Snake extends JPanel
 
     public Image getImage() {
         return image;
+    }
+    
+    public void setProximo(Snake _proximo){
+        this.proximo = _proximo;
+    }
+    
+    public Snake getProximo(){
+        return this.proximo;
     }
 
 }
